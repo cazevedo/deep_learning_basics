@@ -7,6 +7,18 @@ pip install -r requirements.txt --upgrade
 ```
 
 ## Description
+##### logistic_regression_pytorch.py
+
+l2-regularized logistic regression implemented using pytorch.
+
+##### feedforward_pytorch.py
+
+Feed-forward neural network using dropout regularization, implemented usign pytorch.
+
+##### dynamic_programming.py
+
+Implementation of viterbi and forward-backward algorithms in order to predict the most likely weather, by knowing John's past activities (emission and transition probabilities can be found in the load_dataset() method).
+
 ##### cnn.py
 
 Convolutional Neural Network implemented in Pytorch for OCR optical character recognition, with the following structure:
