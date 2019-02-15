@@ -6,6 +6,9 @@ Some basic examples of deep learning neural networks architectures and algorithm
 pip install -r requirements.txt --upgrade
 ```
 
+## Dataset
+The dataset used in these examples can be found here: http://ai.stanford.edu/~btaskar/ocr
+
 ## Description
 ##### logistic_regression_pytorch.py
 
@@ -13,11 +16,15 @@ l2-regularized logistic regression implemented using pytorch.
 
 ##### feedforward_pytorch.py
 
-Feed-forward neural network using dropout regularization, implemented usign pytorch.
+Feed-forward neural network using dropout regularization, implemented using pytorch.
 
 ##### dynamic_programming.py
 
 Implementation of viterbi and forward-backward algorithms in order to predict the most likely weather, by knowing John's past activities (emission and transition probabilities can be found in the load_dataset() method).
+
+##### structured_perceptron.py
+
+Implementation of a structured perceptron, that takes advantage of the sequential structure of the characters (as they form words) in the OCR dataset. It makes use of the viterbi algorithm to perform the word prediction and keeps the perceptron weight update to improve both the unigram and the bigram weigths.
 
 ##### cnn.py
 
