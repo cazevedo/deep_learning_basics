@@ -22,7 +22,6 @@ Convolutional Neural Network implemented in Pytorch for OCR optical character re
 
 BILSTM tagger, that consists in a feedforward layer, followed by a bidirectional LSTM and an affine transformation with an output softmax layer. This architecture explores the sequential order of the characters.
 
-
 ##### transliteration_onehot.py
 
 Sequence-to-sequence model to transliterate Arabic to English words. Implemented using an encoder-decoder architecture with two unidirectional LSTMs (one encoder LSTM and one decoder LSTM), where the input/output is represented by one-hot embeddings.
@@ -30,3 +29,7 @@ Sequence-to-sequence model to transliterate Arabic to English words. Implemented
 ##### transliteration_embed.py
 
 Sequence-to-sequence model to transliterate Arabic to English words. Implemented using an encoder-decoder architecture with two unidirectional LSTMs (one encoder LSTM and one decoder LSTM), where the input/output embeddings representation was learned through a fully connected layer.
+
+##### transliteration_att.py
+
+Sequence-to-sequence model to transliterate Arabic to English words. Implemented using an encoder-decoder architecture with a bidirectional LSTM (encoder) and an unidirectional LSTM (decoder) with an attention mechanism.
