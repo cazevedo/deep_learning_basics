@@ -1,5 +1,5 @@
 # deep_learning_basics
-Some basic examples of deep learning neural networks architectures and algorithms
+Some basic examples of deep learning neural networks that ilustrate the basic architectures and algorithms and respective implementations in python/pytorch.
 
 ## Setup
 ```bash
@@ -7,16 +7,29 @@ pip install -r requirements.txt --upgrade
 ```
 
 ## Dataset
-The dataset used in these examples can be found here: http://ai.stanford.edu/~btaskar/ocr
+The OCR dataset used in these examples can be found here: http://ai.stanford.edu/~btaskar/ocr
+The Arabic-English transliteration dataset can be found here: https://github.com/googlei18n/transliteration
 
 ## Description
+##### perceptron.py and perceptron_joint_features.py
+
+Perceptron algorithm implemented using just plain algebra. This linear classifier is used for optical character recognition in the OCR dataset. The first implementation used the binary pixel values as feature representation, while the second takes advantage of the correlation between neighbour pixels and uses pairwise combinations of all pixels.
+
+##### logistic_regression.py
+
+Logistic regression algorithm, with stochastic gradient descent as tranining algorithm, implemented using just plain algebra. This linear classifier is used for optical character recognition in the OCR dataset.
+
+##### multilayer_perceptron.py
+
+Multilayer perceptron (feed-forward neural network) implementation using just plain algebra. This classifier is used for optical character recognition in the OCR dataset.
+
 ##### logistic_regression_pytorch.py
 
-l2-regularized logistic regression implemented using pytorch.
+l2-regularized logistic regression implemented using pytorch. This classifier is used for optical character recognition in the OCR dataset.
 
 ##### feedforward_pytorch.py
 
-Feed-forward neural network using dropout regularization, implemented using pytorch.
+Feed-forward neural network using dropout regularization, implemented using pytorch. This classifier is used for optical character recognition in the OCR dataset.
 
 ##### dynamic_programming.py
 
