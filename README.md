@@ -8,6 +8,7 @@ pip install -r requirements.txt --upgrade
 
 ## Description
 * cnn.py
+
 Convolutional Neural Network implemented in Pytorch for OCR optical character recognition, with the following structure:
 A first convolutional layer with 20 channels and filters of size 5x5, stride of 1, and padding chosen to preserve the original image size.
 A relu activation applied to the end of this layer.
