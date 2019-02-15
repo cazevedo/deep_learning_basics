@@ -2,6 +2,7 @@
 Some basic examples of deep learning neural networks that ilustrate the basic architectures and algorithms and respective implementations in python/pytorch.
 
 ## Setup
+install pytorch: https://pytorch.org/get-started/locally/
 ```bash
 pip install -r requirements.txt --upgrade
 ```
